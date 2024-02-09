@@ -1,6 +1,23 @@
+function Scientist({name, imgId, profession, numAwards, awards, discovered}) {
+    return (<div>
+	    <section className="profile">
+	    <h2>name</h2>
+	    <img />
+	    <ul>
+	    <li>
+	    <b>Profession: </b> profession </li>
+	    <li>
+	    <b>Awards: numAwards</b> awards </li>
+	    <li>
+	    <b>Discovered: </b> discovered </li>
+	    </ul>
+	    </section>
+
+}
+
 export default function Gallery() {
   return (
-    <div>
+  /*  <div>
       <h1>Notable Scientists</h1>
       <section className="profile">
         <h2>Maria Skłodowska-Curie</h2>
@@ -25,8 +42,16 @@ export default function Gallery() {
             polonium (element)
           </li>
         </ul>
-      </section>
-      <section className="profile">
+	  </section> */
+
+	  <Scientist
+      name = "Maria Skłodowska-Curie"
+      imgId = 
+
+
+
+
+	  /*<section className="profile">
         <h2>Katsuko Saruhashi</h2>
         <img
           className="avatar"
@@ -50,6 +75,11 @@ export default function Gallery() {
           </li>
         </ul>
       </section>
-    </div>
+      </div> */
+
+
+	  <Scientist
+      name = "Katsuko Saruhashi"
+      imgId = 
   );
 }
