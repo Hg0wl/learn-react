@@ -4,3 +4,4 @@ export default function Profile() {
       alt="Katherine Johnson"
     />)
 }
+
