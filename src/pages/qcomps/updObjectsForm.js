@@ -4,11 +4,15 @@ export default function Scoreboard() {
   const [player, setPlayer] = useState({
     firstName: 'Ranjani',
     lastName: 'Shettar',
-    score: 10,
+    score: 10
   });
 
   function handlePlusClick() {
-    player.score++;
+    let newScore = player.score++;
+    setPlayer({
+      ...player,
+      score: newScore
+    });
   }
 
   function handleFirstNameChange(e) {
@@ -19,7 +23,8 @@ export default function Scoreboard() {
   }
 
   function handleLastNameChange(e) {
-    setPlayer({
+    setPlayer({ 
+      ...player,
       lastName: e.target.value
     });
   }
