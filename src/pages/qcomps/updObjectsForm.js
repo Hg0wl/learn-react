@@ -4,7 +4,7 @@ export default function Scoreboard() {
   const [player, setPlayer] = useState({
     firstName: 'Ranjani',
     lastName: 'Shettar',
-    score: 10
+    score: 10 
   });
 
   function handlePlusClick() {
